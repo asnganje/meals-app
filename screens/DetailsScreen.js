@@ -12,13 +12,12 @@ function DetailsScreen({route, navigation}) {
 
   function headerButtonPressHandler() {
     console.log("tapped");
-    
   }
 
   useLayoutEffect(()=> {
     navigation.setOptions({
       headerRight: ()=> {
-        return <IconButton icon="star" color="white" onPress={headerButtonPressHandler}/>
+        return <IconButton icon="star" color="" onPress={headerButtonPressHandler}/>
       }
     })
   }, [navigation, headerButtonPressHandler])
