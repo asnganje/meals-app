@@ -17,7 +17,7 @@ function DetailsScreen({route, navigation}) {
   useLayoutEffect(()=> {
     navigation.setOptions({
       headerRight: ()=> {
-        return <IconButton icon="star" color="" onPress={headerButtonPressHandler}/>
+        return <IconButton icon="star" color="white" onPress={headerButtonPressHandler}/>
       }
     })
   }, [navigation, headerButtonPressHandler])
